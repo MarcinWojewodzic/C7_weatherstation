@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -36,5 +36,11 @@ S 6600 1000 1050 1550
 U 672E4E38
 F0 "Power" 50
 F1 "Power.sch" 50
+$EndSheet
+$Sheet
+S 1000 2950 1550 1650
+U 672EED17
+F0 "Screen" 50
+F1 "Screen.sch" 50
 $EndSheet
 $EndSCHEMATC

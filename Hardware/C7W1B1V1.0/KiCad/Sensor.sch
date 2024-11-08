@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,363 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L BME688:BME688 U2
+U 1 1 672FF5AC
+P 2500 1850
+F 0 "U2" H 3100 2115 50  0000 C CNN
+F 1 "BME688" H 3100 2024 50  0000 C CNN
+F 2 "Footprints:BME688" H 3550 1950 50  0001 L CNN
+F 3 "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf" H 3550 1850 50  0001 L CNN
+F 4 "Gas sensor measuring relative humidity, barometric pressure, ambient temperature and gas (VOC)" H 3550 1750 50  0001 L CNN "Description"
+F 5 "1" H 3550 1650 50  0001 L CNN "Height"
+F 6 "BOSCH" H 3550 1550 50  0001 L CNN "Manufacturer_Name"
+F 7 "BME688" H 3550 1450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "262-BME688" H 3550 1350 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BME688?qs=IS%252B4QmGtzzqQoVDscqwx3A%3D%3D" H 3550 1250 50  0001 L CNN "Mouser Price/Stock"
+F 10 "BME688" H 3550 1150 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/bme688/bosch?region=europe" H 3550 1050 50  0001 L CNN "Arrow Price/Stock"
+	1    2500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6730339E
+P 2100 1900
+AR Path="/672E4D00/6730339E" Ref="C?"  Part="1" 
+AR Path="/672E4DB0/6730339E" Ref="C9"  Part="1" 
+F 0 "C9" V 2250 1850 50  0000 L CNN
+F 1 "100n/16V/X5R" V 1950 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2138 1750 50  0001 C CNN
+F 3 "~" H 2100 1900 50  0001 C CNN
+	1    2100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 673033A4
+P 3900 1450
+AR Path="/672E4D00/673033A4" Ref="R?"  Part="1" 
+AR Path="/672E4DB0/673033A4" Ref="R5"  Part="1" 
+F 0 "R5" H 3970 1496 50  0000 L CNN
+F 1 "10k/5%/0.063W" V 3800 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3830 1450 50  0001 C CNN
+F 3 "~" H 3900 1450 50  0001 C CNN
+	1    3900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 673034DE
+P 4950 2400
+F 0 "#PWR0110" H 4950 2150 50  0001 C CNN
+F 1 "GND" H 4955 2227 50  0000 C CNN
+F 2 "" H 4950 2400 50  0001 C CNN
+F 3 "" H 4950 2400 50  0001 C CNN
+	1    4950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 673036AD
+P 3900 1150
+F 0 "#PWR0111" H 3900 1000 50  0001 C CNN
+F 1 "+3V3" H 3915 1323 50  0000 C CNN
+F 2 "" H 3900 1150 50  0001 C CNN
+F 3 "" H 3900 1150 50  0001 C CNN
+	1    3900 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1950 3900 1950
+Wire Wire Line
+	3900 1950 3900 1600
+Wire Wire Line
+	3900 1150 3900 1300
+Wire Wire Line
+	3700 1850 4950 1850
+Wire Wire Line
+	4950 1850 4950 2400
+$Comp
+L Device:R R?
+U 1 1 673050A1
+P 4250 1450
+AR Path="/672E4D00/673050A1" Ref="R?"  Part="1" 
+AR Path="/672E4DB0/673050A1" Ref="R6"  Part="1" 
+F 0 "R6" H 4320 1496 50  0000 L CNN
+F 1 "10k/5%/0.063W" V 4150 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4180 1450 50  0001 C CNN
+F 3 "~" H 4250 1450 50  0001 C CNN
+	1    4250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 673054D4
+P 4600 1450
+AR Path="/672E4D00/673054D4" Ref="R?"  Part="1" 
+AR Path="/672E4DB0/673054D4" Ref="R7"  Part="1" 
+F 0 "R7" H 4670 1496 50  0000 L CNN
+F 1 "10k/5%/0.063W" V 4500 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4530 1450 50  0001 C CNN
+F 3 "~" H 4600 1450 50  0001 C CNN
+	1    4600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2050 4250 2050
+Wire Wire Line
+	4250 2050 4250 1600
+Wire Wire Line
+	3700 2150 4600 2150
+Wire Wire Line
+	4600 2150 4600 1600
+Wire Wire Line
+	4250 2050 5250 2050
+Connection ~ 4250 2050
+Wire Wire Line
+	4600 2150 5250 2150
+Connection ~ 4600 2150
+Wire Wire Line
+	2500 2150 2350 2150
+Wire Wire Line
+	2350 2150 2350 2400
+$Comp
+L Device:R R?
+U 1 1 67306106
+P 2350 2550
+AR Path="/672E4D00/67306106" Ref="R?"  Part="1" 
+AR Path="/672E4DB0/67306106" Ref="R4"  Part="1" 
+F 0 "R4" H 2420 2596 50  0000 L CNN
+F 1 "10k/5%/0.063W" V 2250 2250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2280 2550 50  0001 C CNN
+F 3 "~" H 2350 2550 50  0001 C CNN
+	1    2350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 67306692
+P 2350 2800
+F 0 "#PWR0112" H 2350 2550 50  0001 C CNN
+F 1 "GND" H 2355 2627 50  0000 C CNN
+F 2 "" H 2350 2800 50  0001 C CNN
+F 3 "" H 2350 2800 50  0001 C CNN
+	1    2350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2700 2350 2800
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 67306A3C
+P 4250 1150
+F 0 "#PWR0113" H 4250 1000 50  0001 C CNN
+F 1 "+3V3" H 4265 1323 50  0000 C CNN
+F 2 "" H 4250 1150 50  0001 C CNN
+F 3 "" H 4250 1150 50  0001 C CNN
+	1    4250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1150 4250 1300
+$Comp
+L power:+3V3 #PWR0114
+U 1 1 67306EA3
+P 4600 1150
+F 0 "#PWR0114" H 4600 1000 50  0001 C CNN
+F 1 "+3V3" H 4615 1323 50  0000 C CNN
+F 2 "" H 4600 1150 50  0001 C CNN
+F 3 "" H 4600 1150 50  0001 C CNN
+	1    4600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1150 4600 1300
+Wire Wire Line
+	2500 1850 2350 1850
+Wire Wire Line
+	2350 1850 2350 1750
+Wire Wire Line
+	2350 1750 2100 1750
+Wire Wire Line
+	2500 1950 2350 1950
+Wire Wire Line
+	2350 1950 2350 2050
+Wire Wire Line
+	2350 2050 2100 2050
+Wire Wire Line
+	2100 1750 2100 1600
+Connection ~ 2100 1750
+$Comp
+L power:+3V3 #PWR0115
+U 1 1 67308A5B
+P 2100 1600
+F 0 "#PWR0115" H 2100 1450 50  0001 C CNN
+F 1 "+3V3" H 2115 1773 50  0000 C CNN
+F 2 "" H 2100 1600 50  0001 C CNN
+F 3 "" H 2100 1600 50  0001 C CNN
+	1    2100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 673090AA
+P 2100 2100
+F 0 "#PWR0116" H 2100 1850 50  0001 C CNN
+F 1 "GND" H 2105 1927 50  0000 C CNN
+F 2 "" H 2100 2100 50  0001 C CNN
+F 3 "" H 2100 2100 50  0001 C CNN
+	1    2100 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2050 2100 2100
+Connection ~ 2100 2050
+Wire Wire Line
+	2500 2050 2400 2050
+Wire Wire Line
+	2400 2050 2400 2100
+Wire Wire Line
+	2400 2100 2200 2100
+Wire Wire Line
+	2200 2100 2200 2350
+Wire Wire Line
+	2200 2350 1500 2350
+$Comp
+L power:GND #PWR0117
+U 1 1 6730B0F7
+P 1500 2650
+F 0 "#PWR0117" H 1500 2400 50  0001 C CNN
+F 1 "GND" H 1505 2477 50  0000 C CNN
+F 2 "" H 1500 2650 50  0001 C CNN
+F 3 "" H 1500 2650 50  0001 C CNN
+	1    1500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6730B8E1
+P 1500 2500
+AR Path="/672E4D00/6730B8E1" Ref="C?"  Part="1" 
+AR Path="/672E4DB0/6730B8E1" Ref="C8"  Part="1" 
+F 0 "C8" V 1650 2450 50  0000 L CNN
+F 1 "100n/16V/X5R" V 1350 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1538 2350 50  0001 C CNN
+F 3 "~" H 1500 2500 50  0001 C CNN
+	1    1500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2350 1500 2200
+Connection ~ 1500 2350
+$Comp
+L power:+3V3 #PWR0118
+U 1 1 6730CB2F
+P 1500 2200
+F 0 "#PWR0118" H 1500 2050 50  0001 C CNN
+F 1 "+3V3" H 1515 2373 50  0000 C CNN
+F 2 "" H 1500 2200 50  0001 C CNN
+F 3 "" H 1500 2200 50  0001 C CNN
+	1    1500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J?
+U 1 1 6730E0F9
+P 6300 4000
+AR Path="/672EED17/6730E0F9" Ref="J?"  Part="1" 
+AR Path="/672E4DB0/6730E0F9" Ref="J2"  Part="1" 
+F 0 "J2" H 6350 4317 50  0000 C CNN
+F 1 "PMS3003" H 6350 4226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 6300 4000 50  0001 C CNN
+F 3 "~" H 6300 4000 50  0001 C CNN
+	1    6300 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5250 2050 2    50   BiDi ~ 0
+SDA
+Text GLabel 5250 2150 2    50   Input ~ 0
+SCL
+$Comp
+L Device:C C?
+U 1 1 67316B70
+P 6350 3300
+AR Path="/672E4D00/67316B70" Ref="C?"  Part="1" 
+AR Path="/672E4DB0/67316B70" Ref="C10"  Part="1" 
+F 0 "C10" V 6500 3250 50  0000 L CNN
+F 1 "100n/16V/X5R" V 6200 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6388 3150 50  0001 C CNN
+F 3 "~" H 6350 3300 50  0001 C CNN
+	1    6350 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 3900 6750 3900
+Wire Wire Line
+	6750 3900 6750 3300
+Wire Wire Line
+	6100 3900 5950 3900
+Wire Wire Line
+	5950 3900 5950 3300
+Wire Wire Line
+	5950 3300 6200 3300
+Wire Wire Line
+	5950 3150 5950 3300
+$Comp
+L power:GND #PWR0119
+U 1 1 6731A3A3
+P 6600 3300
+F 0 "#PWR0119" H 6600 3050 50  0001 C CNN
+F 1 "GND" H 6605 3127 50  0000 C CNN
+F 2 "" H 6600 3300 50  0001 C CNN
+F 3 "" H 6600 3300 50  0001 C CNN
+	1    6600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3300 6600 3300
+Connection ~ 6600 3300
+Wire Wire Line
+	6600 3300 6500 3300
+$Comp
+L power:+5V #PWR0120
+U 1 1 6731C33D
+P 5950 3150
+F 0 "#PWR0120" H 5950 3000 50  0001 C CNN
+F 1 "+5V" H 5965 3323 50  0000 C CNN
+F 2 "" H 5950 3150 50  0001 C CNN
+F 3 "" H 5950 3150 50  0001 C CNN
+	1    5950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4000 5750 4000
+Wire Wire Line
+	5750 4000 5750 3650
+$Comp
+L Device:R R?
+U 1 1 6731DBE5
+P 5750 3500
+AR Path="/672E4D00/6731DBE5" Ref="R?"  Part="1" 
+AR Path="/672E4DB0/6731DBE5" Ref="R8"  Part="1" 
+F 0 "R8" V 5850 3450 50  0000 L CNN
+F 1 "10k/5%/0.063W" V 5650 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5680 3500 50  0001 C CNN
+F 3 "~" H 5750 3500 50  0001 C CNN
+	1    5750 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3350 5750 3300
+Wire Wire Line
+	5750 3300 5950 3300
+Connection ~ 5950 3300
+NoConn ~ 6600 4000
+Text GLabel 6100 4100 0    50   Output ~ 0
+PMS_TX
+Text GLabel 6600 4100 2    50   Input ~ 0
+PMS_RST
+NoConn ~ 6100 4200
+NoConn ~ 6600 4200
 $EndSCHEMATC
