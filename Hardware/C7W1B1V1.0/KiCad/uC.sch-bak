@@ -1,0 +1,155 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32L0:STM32L082KBUx U1
+U 1 1 672E52F1
+P 5500 4200
+F 0 "U1" H 5500 5281 50  0000 C CNN
+F 1 "STM32L082KBUx" H 5500 5190 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 5000 3400 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141132.pdf" H 5500 4200 50  0001 C CNN
+	1    5500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3300 5500 3300
+Connection ~ 5500 3300
+Wire Wire Line
+	5500 3300 5550 3300
+Connection ~ 5600 3300
+Wire Wire Line
+	5600 3300 5700 3300
+Wire Wire Line
+	5550 3300 5550 1700
+Wire Wire Line
+	5550 1700 5200 1700
+Connection ~ 5550 3300
+Wire Wire Line
+	5550 3300 5600 3300
+$Comp
+L Device:C C4
+U 1 1 672E6E58
+P 5200 1850
+F 0 "C4" V 5450 1800 50  0000 L CNN
+F 1 "100n/16V/X5R" V 5350 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5238 1700 50  0001 C CNN
+F 3 "~" H 5200 1850 50  0001 C CNN
+	1    5200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1700 5550 1400
+Connection ~ 5550 1700
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 672E8774
+P 5550 1400
+F 0 "#PWR0101" H 5550 1250 50  0001 C CNN
+F 1 "+3V3" H 5565 1573 50  0000 C CNN
+F 2 "" H 5550 1400 50  0001 C CNN
+F 3 "" H 5550 1400 50  0001 C CNN
+	1    5550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 672E8F61
+P 4000 2000
+F 0 "#PWR0102" H 4000 1750 50  0001 C CNN
+F 1 "GND" H 4005 1827 50  0000 C CNN
+F 2 "" H 4000 2000 50  0001 C CNN
+F 3 "" H 4000 2000 50  0001 C CNN
+	1    4000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 672EA200
+P 4800 1850
+F 0 "C3" V 5050 1800 50  0000 L CNN
+F 1 "100n/16V/X5R" V 4950 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4838 1700 50  0001 C CNN
+F 3 "~" H 4800 1850 50  0001 C CNN
+	1    4800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 672EA6BA
+P 4400 1850
+F 0 "C2" V 4650 1800 50  0000 L CNN
+F 1 "100n/16V/X5R" V 4550 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4438 1700 50  0001 C CNN
+F 3 "~" H 4400 1850 50  0001 C CNN
+	1    4400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 672EA9E3
+P 4000 1850
+F 0 "C1" V 4250 1800 50  0000 L CNN
+F 1 "100n/16V/X5R" V 4150 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 1700 50  0001 C CNN
+F 3 "~" H 4000 1850 50  0001 C CNN
+	1    4000 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1700 4800 1700
+Connection ~ 5200 1700
+Connection ~ 4400 1700
+Wire Wire Line
+	4400 1700 4000 1700
+Connection ~ 4800 1700
+Wire Wire Line
+	4800 1700 4400 1700
+Wire Wire Line
+	5200 2000 4800 2000
+Connection ~ 4000 2000
+Connection ~ 4400 2000
+Wire Wire Line
+	4400 2000 4000 2000
+Connection ~ 4800 2000
+Wire Wire Line
+	4800 2000 4400 2000
+$Comp
+L Device:R R?
+U 1 1 672EB48B
+P 4550 3300
+F 0 "R?" H 4620 3346 50  0000 L CNN
+F 1 "10k/5%/0.063W" H 4620 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4480 3300 50  0001 C CNN
+F 3 "~" H 4550 3300 50  0001 C CNN
+	1    4550 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3500 4550 3500
+Wire Wire Line
+	4550 3500 4550 3450
+$Comp
+L power:+3V3 #PWR?
+U 1 1 672EC2CA
+P 4550 3150
+F 0 "#PWR?" H 4550 3000 50  0001 C CNN
+F 1 "+3V3" H 4565 3323 50  0000 C CNN
+F 2 "" H 4550 3150 50  0001 C CNN
+F 3 "" H 4550 3150 50  0001 C CNN
+	1    4550 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

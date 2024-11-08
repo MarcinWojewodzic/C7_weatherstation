@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name BME688)(type Legacy)(uri ${KIPRJMOD}/Libraries/BME688.lib)(options "")(descr ""))
+  (lib (name USB4105GFA120)(type Legacy)(uri ${KIPRJMOD}/Libraries/USB4105GFA120.lib)(options "")(descr ""))
+  (lib (name USBLC6-2P6)(type Legacy)(uri ${KIPRJMOD}/Libraries/USBLC6-2P6.lib)(options "")(descr ""))
+)
