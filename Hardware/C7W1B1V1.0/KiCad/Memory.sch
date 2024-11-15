@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,281 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L MB85RS512TPNF-G-JNERE1:MB85RS512TPNF-G-JNERE1 U3
+U 1 1 673A5088
+P 3850 2950
+F 0 "U3" H 4400 3215 50  0000 C CNN
+F 1 "MB85RS512TPNF-G-JNERE1" H 4400 3124 50  0000 C CNN
+F 2 "Footprints:SOIC127P600X175-8N" H 4800 3050 50  0001 L CNN
+F 3 "http://www.fujitsu.com/us/Images/MB85RS512T-DS501-00029-0v01-E.pdf" H 4800 2950 50  0001 L CNN
+F 4 "F-RAM 512kbit FRAM, SPI, 1.8V 3.6V - SOP8 T&R" H 4800 2850 50  0001 L CNN "Description"
+F 5 "1.75" H 4800 2750 50  0001 L CNN "Height"
+F 6 "FUJITSU" H 4800 2650 50  0001 L CNN "Manufacturer_Name"
+F 7 "MB85RS512TPNF-G-JNERE1" H 4800 2550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "249-85S512TPNFGJNR1" H 4800 2450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Fujitsu-Semiconductor/MB85RS512TPNF-G-JNERE1?qs=HBWAp0VN4RhtxZ%252BiIIdnxw%3D%3D" H 4800 2350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 4800 2250 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 4800 2150 50  0001 L CNN "Arrow Price/Stock"
+	1    3850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L W25N512GVEIG:W25N512GVEIG U4
+U 1 1 673A5DE3
+P 8200 2850
+F 0 "U4" H 9100 3115 50  0000 C CNN
+F 1 "W25N512GVEIG" H 9100 3024 50  0000 C CNN
+F 2 "Footprints:SON127P800X600X80-9N-D" H 9850 2950 50  0001 L CNN
+F 3 "https://www.winbond.com/hq/search-resource-file.jsp?partNo=W25N512GVEIG&type=datasheet" H 9850 2850 50  0001 L CNN
+F 4 "512Mb Serial NAND Flash Memory with uniform 2KB+64B page size and set Buffer Read Mode as default" H 9850 2750 50  0001 L CNN "Description"
+F 5 "0.8" H 9850 2650 50  0001 L CNN "Height"
+F 6 "Winbond" H 9850 2550 50  0001 L CNN "Manufacturer_Name"
+F 7 "W25N512GVEIG" H 9850 2450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "454-W25N512GVEIG" H 9850 2350 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Winbond/W25N512GVEIG?qs=qSfuJ%252Bfl%2Fd5ygZJQb1vhdQ%3D%3D" H 9850 2250 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 9850 2150 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 9850 2050 50  0001 L CNN "Arrow Price/Stock"
+	1    8200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 673AC9A1
+P 5100 2550
+AR Path="/672E4D00/673AC9A1" Ref="C?"  Part="1" 
+AR Path="/672E4E00/673AC9A1" Ref="C11"  Part="1" 
+F 0 "C11" V 5350 2500 50  0000 L CNN
+F 1 "100n/16V/X5R" V 5250 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5138 2400 50  0001 C CNN
+F 3 "~" H 5100 2550 50  0001 C CNN
+	1    5100 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 673AC9A7
+P 5450 2850
+AR Path="/672E4D00/673AC9A7" Ref="R?"  Part="1" 
+AR Path="/672E4E00/673AC9A7" Ref="R9"  Part="1" 
+F 0 "R9" H 5520 2896 50  0000 L CNN
+F 1 "10k/5%/0.063W" H 5520 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5380 2850 50  0001 C CNN
+F 3 "~" H 5450 2850 50  0001 C CNN
+	1    5450 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2950 4950 2550
+Wire Wire Line
+	4950 2550 4950 2250
+Connection ~ 4950 2550
+Wire Wire Line
+	5250 2550 5250 2600
+$Comp
+L power:+3V3 #PWR020
+U 1 1 673AD711
+P 4950 2150
+F 0 "#PWR020" H 4950 2000 50  0001 C CNN
+F 1 "+3V3" H 4965 2323 50  0000 C CNN
+F 2 "" H 4950 2150 50  0001 C CNN
+F 3 "" H 4950 2150 50  0001 C CNN
+	1    4950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 673ADD8B
+P 5250 2600
+F 0 "#PWR021" H 5250 2350 50  0001 C CNN
+F 1 "GND" H 5255 2427 50  0000 C CNN
+F 2 "" H 5250 2600 50  0001 C CNN
+F 3 "" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 673AE31C
+P 9100 3700
+F 0 "#PWR023" H 9100 3450 50  0001 C CNN
+F 1 "GND" H 9105 3527 50  0000 C CNN
+F 2 "" H 9100 3700 50  0001 C CNN
+F 3 "" H 9100 3700 50  0001 C CNN
+	1    9100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR022
+U 1 1 673AE745
+P 7500 2250
+F 0 "#PWR022" H 7500 2100 50  0001 C CNN
+F 1 "+3V3" H 7515 2423 50  0000 C CNN
+F 2 "" H 7500 2250 50  0001 C CNN
+F 3 "" H 7500 2250 50  0001 C CNN
+	1    7500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3050 5450 3050
+Wire Wire Line
+	5450 3050 5450 3000
+Wire Wire Line
+	5450 2700 5450 2250
+Wire Wire Line
+	5450 2250 4950 2250
+Connection ~ 4950 2250
+Wire Wire Line
+	4950 2250 4950 2150
+$Comp
+L Device:R R?
+U 1 1 673AF670
+P 7500 2800
+AR Path="/672E4D00/673AF670" Ref="R?"  Part="1" 
+AR Path="/672E4E00/673AF670" Ref="R10"  Part="1" 
+F 0 "R10" V 7350 2750 50  0000 L CNN
+F 1 "10k/5%/0.063W" V 7400 2500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7430 2800 50  0001 C CNN
+F 3 "~" H 7500 2800 50  0001 C CNN
+	1    7500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 673AF91A
+P 3350 2950
+AR Path="/672E4D00/673AF91A" Ref="R?"  Part="1" 
+AR Path="/672E4E00/673AF91A" Ref="R8"  Part="1" 
+F 0 "R8" V 3150 2900 50  0000 L CNN
+F 1 "10k/5%/0.063W" V 3250 2650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3280 2950 50  0001 C CNN
+F 3 "~" H 3350 2950 50  0001 C CNN
+	1    3350 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3150 3350 3100
+Wire Wire Line
+	3350 2800 3350 2500
+$Comp
+L power:+3V3 #PWR018
+U 1 1 673B095C
+P 3350 2500
+F 0 "#PWR018" H 3350 2350 50  0001 C CNN
+F 1 "+3V3" H 3365 2673 50  0000 C CNN
+F 2 "" H 3350 2500 50  0001 C CNN
+F 3 "" H 3350 2500 50  0001 C CNN
+	1    3350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3250 3850 3550
+$Comp
+L power:GND #PWR019
+U 1 1 673B1023
+P 3850 3550
+F 0 "#PWR019" H 3850 3300 50  0001 C CNN
+F 1 "GND" H 3855 3377 50  0000 C CNN
+F 2 "" H 3850 3550 50  0001 C CNN
+F 3 "" H 3850 3550 50  0001 C CNN
+	1    3850 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 3150 2    50   Input ~ 0
+SCK
+Text GLabel 4950 3250 2    50   Input ~ 0
+MOSI
+Text GLabel 3850 3050 0    50   Output ~ 0
+MISO
+Text GLabel 3850 2950 0    50   Input ~ 0
+~FRAM_CS
+Wire Wire Line
+	3350 3150 3850 3150
+Text GLabel 10000 3050 2    50   Input ~ 0
+SCK
+Text GLabel 10000 3150 2    50   Input ~ 0
+MOSI
+Text GLabel 8200 2950 0    50   Output ~ 0
+MISO
+$Comp
+L Device:C C?
+U 1 1 673B5AC9
+P 10150 2450
+AR Path="/672E4D00/673B5AC9" Ref="C?"  Part="1" 
+AR Path="/672E4E00/673B5AC9" Ref="C12"  Part="1" 
+F 0 "C12" V 10400 2400 50  0000 L CNN
+F 1 "100n/16V/X5R" V 10300 2000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10188 2300 50  0001 C CNN
+F 3 "~" H 10150 2450 50  0001 C CNN
+	1    10150 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 673B5ACF
+P 10500 2750
+AR Path="/672E4D00/673B5ACF" Ref="R?"  Part="1" 
+AR Path="/672E4E00/673B5ACF" Ref="R11"  Part="1" 
+F 0 "R11" H 10570 2796 50  0000 L CNN
+F 1 "10k/5%/0.063W" H 10570 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10430 2750 50  0001 C CNN
+F 3 "~" H 10500 2750 50  0001 C CNN
+	1    10500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2850 10000 2450
+Wire Wire Line
+	10000 2450 10000 2150
+Connection ~ 10000 2450
+Wire Wire Line
+	10300 2450 10300 2500
+$Comp
+L power:+3V3 #PWR024
+U 1 1 673B5AD9
+P 10000 2050
+F 0 "#PWR024" H 10000 1900 50  0001 C CNN
+F 1 "+3V3" H 10015 2223 50  0000 C CNN
+F 2 "" H 10000 2050 50  0001 C CNN
+F 3 "" H 10000 2050 50  0001 C CNN
+	1    10000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 673B5ADF
+P 10300 2500
+F 0 "#PWR025" H 10300 2250 50  0001 C CNN
+F 1 "GND" H 10305 2327 50  0000 C CNN
+F 2 "" H 10300 2500 50  0001 C CNN
+F 3 "" H 10300 2500 50  0001 C CNN
+	1    10300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2600 10500 2150
+Wire Wire Line
+	10500 2150 10000 2150
+Connection ~ 10000 2150
+Wire Wire Line
+	10000 2150 10000 2050
+Wire Wire Line
+	10500 2900 10500 2950
+Wire Wire Line
+	10500 2950 10000 2950
+Wire Wire Line
+	8200 3050 7500 3050
+Wire Wire Line
+	7500 3050 7500 2950
+Wire Wire Line
+	7500 2650 7500 2250
+Wire Wire Line
+	8200 3650 9100 3650
+Wire Wire Line
+	8200 3150 8200 3650
+Wire Wire Line
+	9100 3700 9100 3650
+Connection ~ 9100 3650
+Text GLabel 8200 2850 0    50   Input ~ 0
+~FLASH_CS
 $EndSCHEMATC

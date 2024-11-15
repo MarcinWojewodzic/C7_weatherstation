@@ -7,4 +7,6 @@
   (lib (name S-8252AAD-M6T1U)(type Legacy)(uri ${KIPRJMOD}/Libraries/S-8252AAD-M6T1U.lib)(options "")(descr ""))
   (lib (name PMDPB30XNAX)(type Legacy)(uri ${KIPRJMOD}/Libraries/PMDPB30XNAX.lib)(options "")(descr ""))
   (lib (name S-8261AAXMD-G2XT2U)(type Legacy)(uri ${KIPRJMOD}/Libraries/S-8261AAXMD-G2XT2U.lib)(options "")(descr ""))
+  (lib (name MB85RS512TPNF-G-JNERE1)(type Legacy)(uri ${KIPRJMOD}/Libraries/MB85RS512TPNF-G-JNERE1.lib)(options "")(descr ""))
+  (lib (name W25N512GVEIG)(type Legacy)(uri ${KIPRJMOD}/Libraries/W25N512GVEIG.lib)(options "")(descr ""))
 )
