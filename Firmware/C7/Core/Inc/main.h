@@ -57,26 +57,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SUTATS_GRHC_Pin GPIO_PIN_13
-#define SUTATS_GRHC_GPIO_Port GPIOC
-#define ON_OFF_5V_Pin GPIO_PIN_2
-#define ON_OFF_5V_GPIO_Port GPIOA
-#define FLASH_CS_Pin GPIO_PIN_3
-#define FLASH_CS_GPIO_Port GPIOA
-#define FRAM_CS_Pin GPIO_PIN_4
-#define FRAM_CS_GPIO_Port GPIOA
-#define E_INC_CS_Pin GPIO_PIN_0
-#define E_INC_CS_GPIO_Port GPIOB
-#define E_INC_RST_Pin GPIO_PIN_1
-#define E_INC_RST_GPIO_Port GPIOB
-#define E_INC_BUSY_Pin GPIO_PIN_2
-#define E_INC_BUSY_GPIO_Port GPIOB
-#define E_INC_DC_Pin GPIO_PIN_10
-#define E_INC_DC_GPIO_Port GPIOB
-#define PMS_SET_Pin GPIO_PIN_15
-#define PMS_SET_GPIO_Port GPIOB
-#define PMS_RST_Pin GPIO_PIN_8
-#define PMS_RST_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 

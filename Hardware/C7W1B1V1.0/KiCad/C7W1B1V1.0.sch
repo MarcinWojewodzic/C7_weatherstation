@@ -55,10 +55,10 @@ F 3 "~" H 1350 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 675AA29B
 P 2100 6900
-F 0 "H?" H 2200 6946 50  0000 L CNN
+F 0 "H2" H 2200 6946 50  0000 L CNN
 F 1 "MountingHole" H 2200 6855 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2100 6900 50  0001 C CNN
 F 3 "~" H 2100 6900 50  0001 C CNN
