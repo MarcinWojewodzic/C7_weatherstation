@@ -319,9 +319,9 @@ F 3 "~" H 6000 3000 50  0001 C CNN
 $EndComp
 NoConn ~ 7150 2600
 NoConn ~ 7150 2700
-Text GLabel 8450 3500 2    50   Output ~ 0
-5V_EN
 Text GLabel 8450 3400 2    50   Output ~ 0
+5V_EN
+Text GLabel 8450 3500 2    50   Output ~ 0
 5V_TEST
 Text GLabel 8450 3300 2    50   Input ~ 0
 BATT
@@ -343,4 +343,57 @@ Text GLabel 8450 3600 2    50   Input ~ 0
 ~FLASH_CS
 Text GLabel 8450 3700 2    50   Input ~ 0
 ~FRAM_CS
+Text GLabel 8450 4500 2    50   BiDi ~ 0
+USB_D+
+Text GLabel 8450 4400 2    50   BiDi ~ 0
+USB_D-
+Text GLabel 8450 4700 2    50   Input ~ 0
+SWCLK
+Text GLabel 8450 4600 2    50   BiDi ~ 0
+SWDIO
+Text GLabel 7150 3600 0    50   Output ~ 0
+TX
+Text GLabel 7150 3700 0    50   Input ~ 0
+RX
+Text GLabel 9950 1200 3    50   Input ~ 0
+TX
+Text GLabel 9850 1200 3    50   Output ~ 0
+RX
+Text GLabel 10050 1200 3    50   Output ~ 0
+SWCLK
+Text GLabel 10150 1200 3    50   BiDi ~ 0
+SWDIO
+Text GLabel 6800 2200 0    50   Input ~ 0
+RST
+Text GLabel 9750 1200 3    50   Output ~ 0
+RST
+$Comp
+L power:GND #PWR0108
+U 1 1 6753B37F
+P 10300 1300
+F 0 "#PWR0108" H 10300 1050 50  0001 C CNN
+F 1 "GND" H 10305 1127 50  0000 C CNN
+F 2 "" H 10300 1300 50  0001 C CNN
+F 3 "" H 10300 1300 50  0001 C CNN
+	1    10300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J5
+U 1 1 6753EA67
+P 10050 1000
+F 0 "J5" V 10014 612 50  0000 R CNN
+F 1 "Conn_01x07" V 9923 612 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 10050 1000 50  0001 C CNN
+F 3 "~" H 10050 1000 50  0001 C CNN
+	1    10050 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10250 1200 10300 1200
+Wire Wire Line
+	10300 1200 10300 1300
+Connection ~ 10300 1200
+Wire Wire Line
+	10300 1200 10350 1200
 $EndSCHEMATC
